@@ -163,7 +163,7 @@ export default class RecieverDetailsScreen extends Component {
               style={styles.button}
               onPress={() => {
                 this.updateBookStatus();
-                this.sendNoti();
+                this.addNotification();
                 this.props.navigation.navigate("MyDonations");
               }}
               titleStyle={styles.buttonText}

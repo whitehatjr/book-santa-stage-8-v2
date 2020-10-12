@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, FlatList, Text } from "react-native";
+import { StyleSheet, View, FlatList, Text, Image } from "react-native";
 import { ListItem, Icon } from "react-native-elements";
 import firebase from "firebase";
 import db from "../config";
@@ -79,6 +79,7 @@ export default class NotificationScreen extends Component {
         <View style={styles.lowerContainer}>
           {this.state.allNotifications.length === 0 ? (
             <View style={styles.emptyList}>
+              <Image source={require("../assets/Notification.png")} />
               <Text style={styles.emptyListTitle}>
                 You have no notifications
               </Text>
